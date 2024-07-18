@@ -1,0 +1,26 @@
+#HOW TO CHANGE COLUMN NAMES
+
+#install and load packages
+
+install.packages('tidyverse')
+library(tidyverse)
+
+#Load dataframe
+
+df <- read.csv("C:\\Users\\riley\\Downloads\\Debt - Sheet1.csv")
+
+#View df
+
+View(df)
+glimpse(df)
+
+#Rename columns
+
+df <- df %>% 
+  rename(Years = Year,
+         Debt = Debt..in.Billions..Rounded.)
+
+#View Changes
+glimpse(df)
+
+
