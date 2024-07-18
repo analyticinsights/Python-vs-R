@@ -1,0 +1,23 @@
+#HOW TO CHANGE COLUMN NAMES
+
+#install and load packages
+
+import pandas as pd
+
+#Load dataframe
+
+df = pd.read_csv(r"C:\Users\riley\Downloads\Debt - Sheet1.csv")
+
+#View df
+
+print(df)
+print(df.columns)
+
+#Rename columns
+
+df.rename(columns={'Year':'Years','Debt (in Billions, Rounded)':'Debt'},inplace=True)
+
+#View Changes
+print(df.columns)
+
+
